@@ -1,0 +1,70 @@
+/* Navbar styles */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.05em;
+    font-family: "Gamja Flower";
+}
+
+.navbar-class{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.nav-menu-a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-menu-a:hover{
+    color: rgb(4, 160, 187);
+}
+
+.nav-button{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px;
+}
+
+.nav-button:hover{
+    background-color: rgb(4, 160, 187);
+    color: black;
+}
+
+@media screen and (max-width: 650px){
+    .navbar-class{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-buttons{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .nav-menu{
+        display: block;
+        text-align: center;
+    }
+
+    .nav-menu li{
+        margin: 10px 0px;
+    }
+}
